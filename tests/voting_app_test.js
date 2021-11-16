@@ -1,8 +1,13 @@
 Feature('voting_app');
 
-Scenario('test something', ({ I }) => {
+Scenario('Ver opciones en pantalla de votos', ({ I }) => {
     I.amOnPage('http://localhost:5000/');
-    I.seeElement('Cats');
-    I.seeElement('Dogs');
+    I.see('CATS');
+    I.see('DOGS');
 });
 
+Scenario('Ver opciones en pantalla de resultados', ({ I }) => {
+    I.amOnPage('http://localhost:5001/');
+    I.see('CATS');
+    I.see('DOGS');
+});
