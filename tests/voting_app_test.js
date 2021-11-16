@@ -26,9 +26,5 @@ Scenario('Vote Gatos', ({ I }) => {
     I.click('Cats');    
 });
 
-/*Scenario('Cambiaron las opciones de voto', ({ I }) => {
-    I.amOnPage('http://localhost:5000/');
-    I.dontSee('CATS');
-    I.dontSee('DOGS');
-});*/
+
 
