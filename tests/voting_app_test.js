@@ -8,8 +8,8 @@ Scenario('Ver opciones en pantalla de votos', ({ I }) => {
 
 Scenario('Ver opciones en pantalla de resultados', ({ I }) => {
     I.amOnPage('http://localhost:5001/');
-    I.see('DOGS');
-    I.see('CATS');
+    I.see('Dogs');
+    I.see('Cats');
     
 });
 
