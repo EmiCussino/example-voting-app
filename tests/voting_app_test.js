@@ -11,3 +11,24 @@ Scenario('Ver opciones en pantalla de resultados', ({ I }) => {
     I.see('CATS');
     I.see('DOGS');
 });
+
+Scenario('Titulo por defecto', ({ I }) => {
+    I.amOnPage('http://localhost:5000/');
+    I.see('Cats vs Dogs!');
+    
+});
+Scenario('Vote perros', ({ I }) => {
+    I.amOnPage('http://localhost:5000/');
+    I.click('Dogs');    
+});
+Scenario('Vote Gatos', ({ I }) => {
+    I.amOnPage('http://localhost:5000/');
+    I.click('Cats');    
+});
+
+/*Scenario('Cambiaron las opciones de voto', ({ I }) => {
+    I.amOnPage('http://localhost:5000/');
+    I.dontSee('CATS');
+    I.dontSee('DOGS');
+});*/
+
